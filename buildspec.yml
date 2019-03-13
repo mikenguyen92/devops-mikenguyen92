@@ -1,0 +1,11 @@
+version 0.1
+
+#Tabbing because like python
+#Array in yml are dashes like bullet points
+phases:
+  build:
+    commands: 
+      - echo Welcome to the Pipeline
+      - mvn clean package #This is how you bundle stuf
+artifacts:
+  files: target/FrontController.war #whatever you are building check the target folder #why important? gets deployed into elastic beanstalk
