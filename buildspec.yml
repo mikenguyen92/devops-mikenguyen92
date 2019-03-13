@@ -1,4 +1,4 @@
-version 0.1
+version: 0.1
 
 #Tabbing because like python
 #Array in yml are dashes like bullet points
@@ -8,4 +8,5 @@ phases:
       - echo Welcome to the Pipeline
       - mvn clean package #This is how you bundle stuf
 artifacts:
-  files: target/FrontController.war #whatever you are building check the target folder #why important? gets deployed into elastic beanstalk
+  files: 
+   - target/FrontController.war #whatever you are building check the target folder, why important? gets deployed into elastic beanstalk
